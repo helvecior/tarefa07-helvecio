@@ -53,7 +53,12 @@ flowchart TB
 
     subgraph transferencia["4. Início da transferência"]
         direction LR
-        J[ctrl+c] -->   --> K["Clique em power off"]
+        J[ctrl+c] --> K["Clique em power off"]
+    end
+
+    subgraph transferencia["4. Início da transferência"]
+        direction LR
+        J[ctrl+c] --> K["Clique em power off"]
     end
 
     inicio --> operacao --> rede --> transferencia
@@ -88,7 +93,7 @@ flowchart TB
     
     subgraph inicializacao["5. Pós-transferência"]
         direction LR
-        L["desmonte o disco com o sistema do clonezilla"] --> L.1["Inicie a máquina"] --> L["Teste os recursos básicos da máquina, editores, aplicativos, explorador de arquivos"]
+        L["desmonte o disco com o sistema do clonezilla"] --> M["Inicie a máquina"] --> N["Teste os recursos básicos da máquina, editores, aplicativos, explorador de arquivos"]
     end
 
     inicio --> operacao --> rede --> finalizacao --> inicializacao
